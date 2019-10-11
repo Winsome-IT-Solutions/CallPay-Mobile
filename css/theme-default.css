@@ -115,6 +115,97 @@ a {
 	text-transform: uppercase;
 }
 
+/*NAVBAR*/
+.navbar {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.navbar__hamburger {
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: right;
+    width: 1em;
+    height: 1em;
+    padding: 0;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    border: 0 none;
+    background: transparent;
+}
+
+.navbar__hamburger-top,
+.navbar__hamburger-middle,
+.navbar__hamburger-bottom {
+    display: block;
+    width: 100%;
+    height: .2em;
+    margin-bottom: .2em;
+    transition: transform .2s ease-in-out;
+    border-radius: .05em;
+    background: #FFF;
+}
+
+.navbar__hamburger-top,
+.navbar__hamburger-bottom {
+    content: '';
+}
+
+.navbar__hamburger-top--toggled {
+    transform: translateY(.4em) rotate(135deg);
+}
+
+.navbar__hamburger-middle--toggled {
+    transform: scale(0);
+}
+
+.navbar__hamburger-bottom--toggled {
+    transform: translateY(-.4em) rotate(-135deg);
+}
+
+.navbar__logo,
+.navbar__menuitem {
+    padding: 20px 20px 20px 15px;
+    border-left: 5px solid transparent;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar__logo {
+    display: inline-block;
+}
+
+.navbar__menuitem {
+    display: none;
+}
+
+.navbar__menuitem--toggled {
+    background-color: #8c8c8c transparent;
+    display: block;
+}
+
+.navbar__menuitem:hover {
+    background-color: #666666;
+    border-left-color: #FFF;
+}
+
+@media (min-width: 564px) {
+    .navbar__logo,
+    .navbar__menuitem {
+        display: inline-block;
+        background-color: #000;
+    }
+    .navbar__menuitem:hover {
+        background-color: #000;
+        box-shadow: inset 0 -5px 0 0 #FFF;
+        border-left-color: transparent;
+    }
+    .navbar__hamburger {
+        display: none;
+    }
+}
+
 /* Headungs
  ------------------------------ */
  
@@ -4088,8 +4179,8 @@ div.demo .title span {
 .scrollup {
 	position: fixed;
 	z-index: 999;
-	right: 0.75rem;
-	bottom: 0.75rem;
+	right: 2.0rem;
+	bottom: 1.0rem;
 	display: none;
 	width: 3.625rem;
 	height: 3.625rem;
