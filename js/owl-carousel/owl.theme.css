@@ -840,15 +840,15 @@
 /*custom styles*/
 
 .slide-controls-primary .owl-theme .owl-controls .owl-page span {
-	background: #a9cd2e;
+	background: #05466a;
 }
 .slide-controls-2 .owl-theme .owl-controls .owl-page span {
     background-color: transparent;
-	border:1px solid #a9cd2e;
+	border:1px solid #035f73;
 }
 .slide-controls-2 .owl-theme .owl-controls .owl-page.active span {
-    background-color: #a9cd2e;
-	border:1px solid #a9cd2e;
+    background-color: #05466a;
+	border:1px solid #05466a;
 }
 
 .slide-controls-2.align-left .owl-theme .owl-controls{

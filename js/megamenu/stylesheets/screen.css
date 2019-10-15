@@ -71,7 +71,7 @@ option {
   margin-top: 20px;
 }
 .header-section .logo.mar-4 {
-  margin-top: 23px;
+  margin-top: 15px;
 }
 .header-section .logo.mar-5 {
   margin-top: 25px;
@@ -1505,7 +1505,7 @@ option {
 
   /* line 733, ../sass/screen.scss */
   .header-section {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     border: none;
     left: 0px;
     top: 0px;
@@ -1562,14 +1562,14 @@ option {
   }
   /* line 783, ../sass/screen.scss */
   .header-section #menu > ul {
-    background: #fff;
+    background: #03688c;
     margin: 0px;
   }
 
   /* line 786, ../sass/screen.scss */
   .header-section #menu > ul li {
     position: relative;
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid #067eaa;
   }
   /* line 787, ../sass/screen.scss */
   .header-section #menu > ul li a {
@@ -1610,8 +1610,10 @@ option {
   /* line 824, ../sass/screen.scss */
   .header-section #menu > ul li.hover > a,
   .header-section #menu > ul li.active > a {
-    color: #14bbf2;
+    color: #fff;
   }
+  #menu{ padding: 15px 0 0 0 !important ;}
+  #menu ul li:hover{ background: #05466a !important; display: block; padding-left: 5px; width: 100%;}
   /* line 831, ../sass/screen.scss */
   .header-section #menu > ul li.hover > .arrow:after {
     display: none;
@@ -1803,7 +1805,7 @@ option {
 @media only screen and (max-width: 360px) {
   /* line 1004, ../sass/screen.scss */
   .header-section .logo {
-    width: 85px;
+    width: 100%;
   }
 
   /* line 1007, ../sass/screen.scss */
@@ -1853,7 +1855,7 @@ option {
   /*========== menu style 1 =============*/
 
   .header-section.style1 {
-    background-color: #101010;
+    background-color: #05466a;
     border-bottom: none;
   }
   .header-section.style1.white {

@@ -839,7 +839,7 @@ left: 5%;
 }
 
 .ce-feature-box-16 .subtext{
-	 color:#14bbf2;
+	 color: #919495;
 }
 .ce-feature-box-16 .title{
 	 color:#000;
@@ -3111,7 +3111,8 @@ box-shadow: 0px 0px 40px -1px rgba(0,0,0,0.1);
     margin-bottom: 400px;
 }
 .ce-feature-box-6 {
-    padding: 25px;
+	padding: 25px;
+	border: 10px solid #fbf5f5;
 
 }
 .ce-feature-box-7 .play-btn-img {
