@@ -745,11 +745,14 @@ a:hover.text-hover-primary {
   background-color: #fff;
 }
 #footer-bottom{
-	background: #0084c8;
+	background: #031722;
 padding: 20px 0 20px 0;
 }
-#footer-bottom a{ color: #fff;;}
-#footer-bottom a:hover{ text-decoration: underline;}
+.fo-copyright-holder span{ color: #888484; font-size: 12px;}
+#footer-bottom a{ color: #8f8d8d;;}
+#footer-bottom a:hover{ text-decoration: underline; color: #fff;}
+footer{ padding-bottom: 20px !important;}
+.fo-map h4{ font-size: 18px;}
 /*=============== image Boxes ============= */
 
 .imgbox-dxlarge,
@@ -996,11 +999,12 @@ padding: 20px 0 20px 0;
   line-height: 135px;
 }
 .iconbox-large {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   font-size: 46px;
   color: #242424;
-  line-height: 114px;
+  line-height: 100px;
+  margin-right: 5px !important;
 }
 .iconbox-xmedium {
   width: 110px;
@@ -1458,7 +1462,7 @@ padding: 20px 0 20px 0;
   padding: 0px 0px 0px 120px;
 }
 .text-box-right.more-padding-2 {
-  padding: 0px 0px 0px 140px;
+  padding:0px 0px 0px 110px;
 }
 .text-box-right.more-padding-3 {
   padding: 0px 0px 0px 160px;
@@ -4354,6 +4358,25 @@ div.demo .title span {
     background-size: 2.125rem 2.125rem;
     text-indent: -9999px;
     position: fixed; }
+.uranus.tparrows::before{ font-size: 28px !important; color: #fff !important;}
+
+.bg-light-blue{ background: #7cd2ff;}    
+.bg-deep-blue{ background: #002365;}
+.bg-sky-blue{ background: #0077c0;}
+.bg-see-blue{ background: #033d74;}
+
+.bg-deep-blue .tp-caption{ font-size: 22px !important; padding-left: 2% ; }
+.bg-sky-blue .tp-caption{ font-size: 22px !important; line-height: 32px !important; }
+.bg-see-blue .tp-caption{ font-size: 22px !important; line-height: 32px !important;}
+#owl-review-change  .ce-feature-box-16{ margin-bottom: 0; padding: 0 30px !important;}
+.reviewbox{ margin-bottom: 20px;}
+.feature-bg {
+  background-color: #087aa0;
+}
+.partners h4{ font-size: 18px;
+  color: #6f6e6e;
+  letter-spacing: 0.5px;}
+.rvwbx { padding: 0 30px !important;}
 /*============ google maps ============ */
 .map {
   width: 100%;
@@ -4367,16 +4390,13 @@ div.demo .title span {
 
 .tp-leftarrow {
   left: -80px !important;
-  color: #ec0606 !important;
+  top: 90% !important;
 }
 .tp-rightarrow {
-  left: 120% !important;
+  left: 160px  !important;
+  top: 90% !important;
 }
-.tparrows::before {
 
-  color: #000 !important;
-
-}
 /*============ blog ============ */
 
 .blog-post-info {
@@ -4732,6 +4752,7 @@ div.demo .title span {
     color: #000;
     float: left;
     text-transform: uppercase;
+    font-size: 24px;
   }
   .titlebx h3::after{ content: '';
     border-bottom: 2px solid #0374b3;
@@ -4740,7 +4761,8 @@ div.demo .title span {
     text-align: center;
     margin: 0 auto; } 
     #owl-demo5 .item img{ margin-bottom: 0 !important;}
-  #redeem h2{ padding-top: 45px;}
+  #redeem h2{ padding-top: 45px; font-size: 30px;}
+  #redeem h3{ font-size: 24px;}
   #redeem .text-white{ line-height: 38px;}
   #how {
     padding-top: 0;
@@ -4774,11 +4796,10 @@ width: 30px;
  .user-ratings .icon span { border: 2px solid #096f91;
   padding: 20px;
   color: #000;
-  font-weight: 600;}
+  font-weight: 600; border-radius:10px;}
 
   .user-ratings .icon span:hover{ background: #096f91; color: #fff; }
-  .user-ratings .text-box h2{ color: #ec0606 !important;
-    font-size: 48px;}
+  .user-ratings .text-box h2{ color: #ec0606 !important;font-size: 42px;}
    #videos{ background: #f5f5f5;} 
     .user-ratings .text-box h6{ color: #575555;
       font-size: 18px;
@@ -4788,6 +4809,7 @@ width: 30px;
 .mobilewrap .row{ margin: 0;}
   .titlebx iframe {
     width: 100%;
+    height: auto;
   }
   #reviews{ padding-bottom: 0;}
   .marginnone{ margin: 0;}
@@ -5313,6 +5335,7 @@ width: 30px;
 }
 
 @media screen and (max-width: 480px) {
+
   .margin-bottom {
     margin-bottom: 30px;
   }
@@ -5714,6 +5737,11 @@ width: 30px;
   .margin-bottom {
     margin-bottom: 30px;
   }
+ 
+  #features .iconbox-large { width: 30%; height: auto; float: left;}
+  #features .text-box-right { width: 68%; padding-left: 5%;}
+  #features .text-box-right h4{ font-size: 16px;  margin-bottom: 10px;}
+  .titlebx h3{ font-size: 22px;}
   .margin-bottom-4,
   .margin-bottom-5 {
     margin-bottom: 20px;

@@ -434,15 +434,15 @@ Design and Developed by: Codelayers
 .ce-feature-box-6{
 	width:100%;
 	float:left;
-	padding:60px;
+	padding:40px 65px;
 	border-radius:5px;
-	background-color:#fff;
+	background-color:#ececec;
 	transition: all 0.3s ease-out 0s;
 }
 .ce-feature-box-6 .icon{
 	color:#fff;
 	border-radius:5px;
-	background-color:#14bbf2;
+	background-color:#0a7aa0;
 }
 .ce-feature-box-6 .title{
 	color:#000;
@@ -825,7 +825,7 @@ left: 5%;
 .ce-feature-box-16 {
 	width:100%;
 	float:left;
-	padding:60px;
+	padding:0px 60px;
 	background-color:#fff;
 	transition: all 0.3s ease-out 0s;
 	
@@ -949,7 +949,8 @@ left: 5%;
 	color:#fff;
 }
 
-
+.stepbox .ce-feature-box-6{ padding: 25px 36px 10px 35px;}
+.stepbox h5{ color: #595555 !important; font-size: 16px;}
 /* feature box 20
  ------------------------------ */
 .ce-feature-box-20{
@@ -966,6 +967,9 @@ left: 5%;
 }
 .ce-feature-box-20 .title{
 	color:#fff;
+	margin-bottom: 10px;
+	font-size: 18px;
+	text-transform: uppercase;
 }
 
 /* feature box 21
