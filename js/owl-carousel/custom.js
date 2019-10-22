@@ -51,18 +51,31 @@
  
 });
 	
-	
+$('#owl-demo5').owlCarousel({
+  loop:true,
+  margin:10,
+  autoPlay:true,
+  responsiveClass:true,
+  autoHeight: true,
+  responsive:{
+      0:{
+          items:2,
+          nav:true
+      },
+      
+      600:{
+          items:2,
+          nav:false
+      },
+      1000:{
+          items:5,
+          nav:true,
+          loop:false
+      }
+  }
+})
 
-     
-    $("#owl-demo5").owlCarousel({
-     
-    autoPlay: 3000, //Set AutoPlay to 3 seconds
-     
-    items : 4,
-    itemsDesktop : [1199,3],
-    itemsDesktopSmall : [979,3]
-     
-    });
+    
 
 
 $("#owl-demo6").owlCarousel({

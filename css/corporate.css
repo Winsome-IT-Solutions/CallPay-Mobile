@@ -442,7 +442,7 @@ Design and Developed by: Codelayers
 .ce-feature-box-6 .icon{
 	color:#fff;
 	border-radius:5px;
-	background-color:#0a7aa0;
+	background-color: #2f2e2e;
 }
 .ce-feature-box-6 .title{
 	color:#000;
@@ -826,8 +826,10 @@ left: 5%;
 	width:100%;
 	float:left;
 	padding:0px 60px;
-	background-color:#fff;
+	background: #eaeaea;
 	transition: all 0.3s ease-out 0s;
+	padding: 10px 25px 5px 25px !important;;
+
 	
 }
 .ce-feature-box-16.border {
@@ -949,8 +951,12 @@ left: 5%;
 	color:#fff;
 }
 
-.stepbox .ce-feature-box-6{ padding: 25px 36px 10px 35px;}
-.stepbox h5{ color: #595555 !important; font-size: 16px;}
+.stepbox .ce-feature-box-6{ padding: 25px 36px 10px 35px; border-radius: 22px;}
+.stepbox h5{ font-size: 19px;
+	font-family: Oswald, sans-serif !important;
+	font-weight: 300;
+	line-height: 28px;
+	padding: 0 17px;}
 /* feature box 20
  ------------------------------ */
 .ce-feature-box-20{
@@ -970,6 +976,8 @@ left: 5%;
 	margin-bottom: 10px;
 	font-size: 18px;
 	text-transform: uppercase;
+	font-family: Oswald, sans-serif !important;
+    font-weight: 300;
 }
 
 /* feature box 21
