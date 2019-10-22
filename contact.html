@@ -102,10 +102,7 @@
       <!--end menu--> 
       
   </div>
-    <!--end menu-->
-    
-    
-    <!-- END OF SLIDER WRAPPER -->
+
     <div class="clearfix"></div>
 
       <section id="inner-content" class="innercontent">
@@ -129,17 +126,17 @@
                     </div>
                     <div class="form-group">
                         <label>Message</label>
-                       <textarea  name="message"  id="message_box" class="form-control" row="5"></textarea>
+                       <textarea  name="message"  id="message_box" class="form-control" row="5" placeholder="Enter your Message" ></textarea>
                       </div>
 
                       <div class="form-group">
                           <input type="button" name="sub" id="contact_form"  value="Submit" class="btn btn-info">
                       </div> <br>
 
-                      <h6 class="less-mar-2"> Email: </h6> <br>
+                      <!-- <h6 class="less-mar-2"> Email: </h6> <br>
                       ali@winsomeitsolutions.com <br>
                       ahmedraza.khawaja@gmail.com <br>
-                      callpay786@gmail.com <br>
+                      callpay786@gmail.com <br> -->
             </div>
         </div>
       </div>
@@ -350,68 +347,62 @@ The following part can be removed on Server for On Demand Loading) -->
 
 $(document).ready(function() {
  
- $('#contact_form').click(function() {
-   var fullname = $('#fullname').val();
-   var email_text = $('#email').val();
-   var mbno = $('#number').val();
-   var message_box = $('#message_box').val();
-   
-   if(fullname=='')
-   {
-     alert('Please enter your Full Name !!');
-     $('#fullname').focus();
-   }
-   else if(email_text=='')
-      {
-         alert('Please Enter Your Email ID !!');
-         $('#email').focus();       
-      }
-    else if(!isValidEmailAddress(email_text))
-      {
-         alert('Please Enter Your Valid Email Address !!');
-         $('#email').focus();     
-        $('.errormsg_txt').text('Please Enter Your Valid Email Address !!');
-        
-      } 
-  
-   else if(mbno=='')
-      {
-         alert('Please Enter Your Mobile Number !!');
-         $('#number').focus();    
-      
-      }
-      else if(isNaN(mbno))
-      {
-        alert('Please Enter Your Valid Phone Number !!');
-         $('#number').focus();          
-      }
-     
-          
-      else
-      {
-          alert('Hobe');
-          $.ajax({
+          $('#contact_form').click(function() {
+            var fullname = $('#fullname').val();
+            var email_text = $('#email').val();
+            var mbno = $('#number').val();
+            var message_box = $('#message_box').val();
             
-            type:'POST',
-            url:'contact.php',
-            data:'fname='+fname+'&mbno='+mbno+'&email_ord='+email_ord+'&remarks_ord='+remarks_ord,
-            success:function(data){
-            
-             $('#fname').val('');
-                     $('#mbno').val('');
-                   $('#email_ord').val('');
-                   $('#date_ord').val('');
-                   $('#remarks_ord').val('');
-            
-            $('.succmsg_txt').show();
-            $('.succmsg_txt').text('Thank you For Contacting Us. We will get in touch with you shortly!');
-                      
-              }
-            
-            })
-      }
+            if(fullname=='')
+            {
+                 alert('Please enter your Full Name !!');
+                 $('#fullname').focus();
+            }
+            else if(email_text=='')
+             {
+                  alert('Please Enter Your Email ID !!');
+                  $('#email').focus();       
+             }
+            else if(!isValidEmailAddress(email_text))
+              {
+                  alert('Please Enter Your Valid Email Address !!');
+                  $('#email').focus();     
+                  $('.errormsg_txt').text('Please Enter Your Valid Email Address !!');                  
+               }             
+            else if(mbno=='')
+                {
+                  alert('Please Enter Your Mobile Number !!');
+                  $('#number').focus();  
+                }
+            else if(isNaN(mbno))
+                {
+                  alert('Please Enter Your Valid Phone Number !!');
+                  $('#number').focus();          
+                }
+                                  
+                else
+                {
 
- });
+                  $.ajax({				  
+                      type:'POST',
+                      url:'contact.php',
+                      data:'fullname='+fullname+'&mbno='+mbno+'&email_text='+email_text+'&message_box='+message_box,
+                      success:function(data){                                  
+                            // $('#fullname').val('');
+                            // $('#email').val('');
+                            // $('#number').val('');
+                            // $('#message_box').val('');                      
+                      alert('Thank you For Contacting Us. We will get in touch with you shortly!');
+                      Window.location.href="contact.html";    
+                                
+                        }
+                      
+                      })
+                    
+                  
+                }
+
+          });
 
 });
 </script>
