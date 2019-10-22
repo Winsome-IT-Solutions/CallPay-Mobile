@@ -42,6 +42,7 @@
 <link href="js/accordion/css/smk-accordion.css" rel="stylesheet"> -->
 <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/jquery/jquery.js"></script> 
 <!-- Template's stylesheets END -->
 <link href="aos/aos.css" rel="stylesheet">
 <!--[if lt IE 9]>
@@ -112,11 +113,37 @@
       <div class="row">
         <div class="col-md-12 innerbox">
             <h1 data-aos="fade-left" >Contact</h1>
-            <div class="contentbox" data-aos="zoom-in-up" >
-              Coming Soon...
+            <div class="contentbox contactform" data-aos="zoom-in-up" >
+              
+                <div class="form-group">
+                  <label>Name<span>*</span></label>
+                 <input type="text" id="fullname" name="fullname" placeholder="Enter your Full Name" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Email<span>*</span></label>
+                   <input type="email" id="email" name="email" placeholder="Enter your Email ID" class="form-control">
+                  </div>
+                  <div class="form-group">
+                      <label>Phone Number<span>*</span></label>
+                     <input type="number" id="number" name="phone" placeholder="Enter your Phone Number" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                       <textarea  name="message"  id="message_box" class="form-control" row="5"></textarea>
+                      </div>
+
+                      <div class="form-group">
+                          <input type="button" name="sub" id="contact_form"  value="Submit" class="btn btn-info">
+                      </div> <br>
+
+                      <h6 class="less-mar-2"> Email: </h6> <br>
+                      ali@winsomeitsolutions.com <br>
+                      ahmedraza.khawaja@gmail.com <br>
+                      callpay786@gmail.com <br>
             </div>
         </div>
       </div>
+                    
 
       </section>
       
@@ -155,11 +182,11 @@
                               </div>
                               <div class="row footer-middle">
                                 <ul class="footer-social-icons dark icons-plain text-center">
-                                  <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                  <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                  <li><a class="twitter" href="https://www.twitter.com/callpay"><i class="fa fa-twitter"></i></a></li>
+                                  <li><a href="https://www.facebook.com/callpay.in/"><i class="fa fa-facebook"></i></a></li>
+                                  <li><a href="https://www.instagram.com/callpayindia/"><i class="fa fa-instagram"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/company/callpayindia"><i class="fa fa-linkedin"></i></a></li>
+                                  <li><a href="https://www.youtube.com/channel/UCeYhrwfyTClu-w6RUAYIlSQ"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
                               </div>
                               <div class="row footer-bottom">
@@ -190,7 +217,7 @@
   
 
 <!-- Scripts --> 
-<script src="js/jquery/jquery.js"></script> 
+
 <script src="js/bootstrap/bootstrap.min.js"></script> 
 <!-- <script src="js/less/less.min.js" data-env="development"></script>  -->
 <!-- Scripts END --> 
@@ -314,6 +341,82 @@ The following part can be removed on Server for On Demand Loading) -->
 	}
 	});	/*ready*/
 </script>  
+<script>
+   function isValidEmailAddress(emailAddress) {
+      var pattern = new RegExp(/^[+a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i);
+      // alert( pattern.test(emailAddress) );
+      return pattern.test(emailAddress);
+  };
+
+$(document).ready(function() {
+ 
+ $('#contact_form').click(function() {
+   var fullname = $('#fullname').val();
+   var email_text = $('#email').val();
+   var mbno = $('#number').val();
+   var message_box = $('#message_box').val();
+   
+   if(fullname=='')
+   {
+     alert('Please enter your Full Name !!');
+     $('#fullname').focus();
+   }
+   else if(email_text=='')
+      {
+         alert('Please Enter Your Email ID !!');
+         $('#email').focus();       
+      }
+    else if(!isValidEmailAddress(email_text))
+      {
+         alert('Please Enter Your Valid Email Address !!');
+         $('#email').focus();     
+        $('.errormsg_txt').text('Please Enter Your Valid Email Address !!');
+        
+      } 
+  
+   else if(mbno=='')
+      {
+         alert('Please Enter Your Mobile Number !!');
+         $('#number').focus();    
+      
+      }
+      else if(isNaN(mbno))
+      {
+        alert('Please Enter Your Valid Phone Number !!');
+         $('#number').focus();          
+      }
+     
+          
+      else
+      {
+          alert('Hobe');
+          $.ajax({
+            
+            type:'POST',
+            url:'contact.php',
+            data:'fname='+fname+'&mbno='+mbno+'&email_ord='+email_ord+'&remarks_ord='+remarks_ord,
+            success:function(data){
+            
+             $('#fname').val('');
+                     $('#mbno').val('');
+                   $('#email_ord').val('');
+                   $('#date_ord').val('');
+                   $('#remarks_ord').val('');
+            
+            $('.succmsg_txt').show();
+            $('.succmsg_txt').text('Thank you For Contacting Us. We will get in touch with you shortly!');
+                      
+              }
+            
+            })
+      }
+
+ });
+
+});
+</script>
+
+
 <script src="js/loaders/loading-custom.js"></script>
  <script src="js/parallax/parallax-background.min.js"></script> 
 <script src="js/parallax/parallax-custom.js"></script> 

@@ -4374,7 +4374,7 @@ ul.footer-flickr {
   border: 1px solid #242424;
   color: #fff;
 }
-
+.contactform .form-group label span{color: #f83546; }
 /*============ css progress circles ============ */
 
 .knob {
