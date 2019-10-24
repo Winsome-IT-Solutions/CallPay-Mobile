@@ -5018,6 +5018,10 @@ font-family: Oswald, sans-serif !important;
     font-weight: 300;
   }
 
+  .mobilewrap{
+    overflow-x: hidden;
+  }
+
   .mobilewrap .row {
     margin: 0;
   }
