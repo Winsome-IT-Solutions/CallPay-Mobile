@@ -1048,25 +1048,34 @@ footer {
 }
 .paytmreedem{ background: rgba(255,255,255,0.9);  width: 36%;}
 .all-step{ position: relative; width: 100%; float: left;}
-.stepbg-1{ background: #05466a !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
+.stepbg-1{ background: linear-gradient(45deg, #4183ed, #373d4a); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
 .stepbg-1 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
-.stepbg-2{ background: #bf0a51 !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
+.stepbg-2{ background: linear-gradient(45deg, #99c4f6, #21587c); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
 .stepbg-2 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
-.stepbg-3{ background: #977c01 !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
+.stepbg-3 {
+  background: linear-gradient(45deg, #b51634, #dd908a);
+  width: 90%;
+  padding: 20px 10px 10px 0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  position: relative;
+}
 .stepbg-3 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center;}
 
-.stepbg-4{ background: #2a256f !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
+.stepbg-4{ background: linear-gradient(45deg, #004379, #051907); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
 .stepbg-4 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
-.stepbg-5{ background: #f83546 !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
+.stepbg-5{ background: linear-gradient(45deg, #2c84bc, #6bd2f8); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
 .stepbg-5 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
-.stepbg-6{ background:  #1e8fdc !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
+.stepbg-6{ background:  linear-gradient(45deg, #c13664, #222670); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px;  position: relative;}
 .stepbg-6 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
-.stepbg-7{ background: #009111 !important; width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
+.stepbg-7{ background: linear-gradient(45deg, #604485, #516194); width: 90%;  padding: 20px 10px 10px 0;  border-radius: 10px;  margin-bottom: 10px;  margin: 0 auto; margin-bottom: 25px; position: relative; }
 .stepbg-7 h5{ color: #fff !important; font-size: 16px; margin: 0; text-align: center; padding: 0 10px;}
 
 .stepbg-1 .iconbox-small{ position: absolute; right: 0; top: -10px;   text-align: center;  left: 0; border-radius: 10px; }
