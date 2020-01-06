@@ -6490,3 +6490,19 @@ div.demo .title span {
   font-weight: 400 !important;
   font-family: Oswald, sans-serif !important;
 }
+.pagination-blog a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 7px;
+  border: none !important;
+}
+.pagination-blog a.active {
+  background-color: rgb(96, 157, 248);
+  color: white;
+}
+
+.pagination-blog a:hover:not(.active) {
+  background-color: #ddd;
+}
